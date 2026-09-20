@@ -3,8 +3,8 @@ syntax = "proto3";
 package service;
 
 import "ceremony/attestation.proto";
+import "identity/principal.proto";
 import "identity/profile.proto";
-import "identity/user.proto";
 import "public_key_credential/creation_options.proto";
 import "token/proof.proto";
 
@@ -17,8 +17,9 @@ message BeginRegisterResponse {
 }
 
 message FinishRegisterRequest {
-  identity.User user = 1;
-  ceremony.Attestation attestation = 2;
+  identity.Principal principal = 1;
+  identity.Profile profile = 2;
+  ceremony.Attestation attestation = 3;
 }
 
 message FinishRegisterResponse {
