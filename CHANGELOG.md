@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.3.0 - 2026-09-20
+#### Features
+- proper namespacing - (d236940) - Nathan Blair
+
+- - -
+
 ## 0.2.0 - 2026-09-20
 #### Features
 - use webauthn-ceremony types - (6958bad) - Nathan Blair
