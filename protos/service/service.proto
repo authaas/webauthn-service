@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package service;
+
+import "service/login.proto";
+import "service/register.proto";
+
+// WebAuthnService handles WebAuthn/Passkey identity verification
+service WebAuthnService {
+  // Begin the webauthn registration ceremony
+  rpc BeginRegister(BeginRegisterRequest) returns (BeginRegisterResponse);
+  // Finish the webauthn registration ceremony
+  rpc FinishRegister(FinishRegisterRequest) returns (FinishRegisterResponse);
+
+  // Begin the webauthn login ceremony
+  rpc BeginLogin(BeginLoginRequest) returns (BeginLoginResponse);
+  // Finish the webauthn login ceremony
+  rpc FinishLogin(FinishLoginRequest) returns (FinishLoginResponse);
+}

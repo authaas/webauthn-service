@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package service;
+
+import "ceremony/attestation.proto";
+import "identity/profile.proto";
+import "identity/user.proto";
+import "public_key_credential/creation_options.proto";
+import "token/proof.proto";
+
+message BeginRegisterRequest {
+  identity.Profile profile = 1;
+}
+
+message BeginRegisterResponse {
+  public_key_credential.CreationOptions options = 1;
+}
+
+message FinishRegisterRequest {
+  identity.User user = 1;
+  ceremony.Attestation attestation = 2;
+}
+
+message FinishRegisterResponse {
+  token.Proof proof = 1;
+}

@@ -1,0 +1,16 @@
+version: v2
+
+modules:
+  - path: protos
+    name: buf.build/authaas/webauthn-service
+
+deps:
+  - buf.build/authaas/identity:0.4.0
+  - buf.build/authaas/token:0.2.1
+  - buf.build/authaas/webauthn:0.1.1
+
+lint:
+  use:
+    - STANDARD
+  except:
+    - PACKAGE_VERSION_SUFFIX

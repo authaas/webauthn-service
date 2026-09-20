@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package service;
+
+import "ceremony/assertion.proto";
+import "public_key_credential/request_options.proto";
+import "token/proof.proto";
+import "webauthn/credential.proto";
+
+message BeginLoginRequest {
+  webauthn.Credential credential = 1;
+}
+
+message BeginLoginResponse {
+  public_key_credential.RequestOptions options = 1;
+}
+
+message FinishLoginRequest {
+  ceremony.Assertion assertion = 1;
+}
+
+message FinishLoginResponse {
+  token.Proof proof = 1;
+}
