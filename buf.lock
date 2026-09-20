@@ -8,8 +8,8 @@ deps:
     commit: 1b86e4d5c13a4142aba26736b2f776a2
     digest: b5:786d6b9e02b26f4fd25720c1bfe22271353ed641b5cb659b73451b35e2989fe9b5bea9893f9cff9f8c057b6c1466b1bb19962547c8a3f50e6cae2501347cb39f
   - name: buf.build/authaas/webauthn
-    commit: 747ef76f094f4729b2c497a16d2eb8c9
-    digest: b5:f1b2cc48078db485d2e27d99c95ef77f4b581a7a1d500e60106ec7a07bf4bcf347c2296d586e8114878292f795be7bc14ec89b50e1909d57a33ec1e7bcbb1443
-  - name: buf.build/authaas/webauthn-ceremony
-    commit: bafa612400da4cc8827cb00fcfc0a3cb
-    digest: b5:ec9d002c1a809207b40bfe58f85df8ee38b9f205a69b29df0769ad398406b99064bf7200f0910eac2977f2d80e7f495ca1502ce28bc5dcf2a37fa5b5b5da0af7
+    commit: 108320bc3c2749939c6beefd78758fca
+    digest: b5:fdd0a0f6cfb78a1442768ba2b6a4ee8184bf61917c905b0e69c73208a25a65fddf9372023fc6bcbf3eba689b95f3a0e270cc7abc5a40dec33a466ff32faee4b8
+  - name: buf.build/authaas/webauthn-credential
+    commit: f803877152624afb97012f5fd508d515
+    digest: b5:c5c654f625ce8e21b552830b6ddea3bfb2c1bd660e859e339c7b55fe8e8e5eabc61d3ff049e53fe7a4b21e712435782ae14d7edcbc7e9de83fa6c27b22c33b63

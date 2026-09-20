@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-package service;
+package webauthn;
 
-import "ceremony/attestation.proto";
 import "identity/principal.proto";
 import "identity/profile.proto";
-import "public_key_credential/creation_options.proto";
 import "token/proof.proto";
+import "webauthn/ceremony/attestation.proto";
+import "webauthn/public_key_credential/creation_options.proto";
 
 message BeginRegisterRequest {
   identity.Profile profile = 1;

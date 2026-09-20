@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-package service;
+package webauthn;
 
-import "service/login.proto";
-import "service/register.proto";
+import "webauthn/login.proto";
+import "webauthn/register.proto";
 
-// WebAuthnService handles WebAuthn/Passkey identity verification
-service WebAuthnService {
+// Service handles WebAuthn/Passkey identity verification
+service Service {
   // Begin the webauthn registration ceremony
   rpc BeginRegister(BeginRegisterRequest) returns (BeginRegisterResponse);
   // Finish the webauthn registration ceremony

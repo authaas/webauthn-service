@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-package service;
+package webauthn;
 
-import "ceremony/assertion.proto";
-import "public_key_credential/request_options.proto";
 import "token/proof.proto";
-import "webauthn/credential.proto";
+import "webauthn/ceremony/assertion.proto";
+import "webauthn/credential/id.proto";
+import "webauthn/public_key_credential/request_options.proto";
 
 message BeginLoginRequest {
-  webauthn.Credential credential = 1;
+  credential.ID credential = 1;
 }
 
 message BeginLoginResponse {
